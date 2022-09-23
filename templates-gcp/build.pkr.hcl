@@ -2,7 +2,7 @@
 source "googlecompute" "basic-golden-images" {
   project_id = "clgcporg2-128"
   zone = "us-central1-a"
-  image_storage_locations = ["us-central1-a"]
+  image_storage_locations = ["us-central1"]
   source_image = "debian-11-bullseye-v20220920"
   source_image_family = "debian"
   image_name = "test-debian10-docker-{{timestamp}}"
