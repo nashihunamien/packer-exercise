@@ -1,6 +1,6 @@
 // * Source image as baseline golden images
 source "googlecompute" "basic-golden-images" {
-  project_id = "clgcporg2-128"
+  project_id = "${vars.project_id}"
   zone = "us-central1-a"
   image_storage_locations = ["us-central1"]
   source_image = "debian-11-bullseye-v20220920"
